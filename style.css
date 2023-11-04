@@ -1,0 +1,140 @@
+:root
+{
+    font-size: 10px;
+}
+*
+{
+    font-family: "Press Start 2P";
+    text-shadow: 2px 2px 4px rgba(129, 125, 125, 0.6);
+
+}
+body
+{ 
+    color: white;
+    background-color: black;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+h1{
+    text-align: center;
+}
+main
+{ 
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input
+{
+    height: 2rem;
+    background-color: black;
+    border-width: 1px;
+    border: none;
+    border-bottom: 1px solid;
+    margin: 30px 30px 30px  0;
+    color: white;
+}
+input:focus
+{
+    outline: none;
+}
+button
+{
+    padding: 1rem 1rem;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, box-shadow .3s, padding .3s;
+    box-shadow: 0 0 10px rgba(221, 204, 204, 0.6);
+    
+}
+button:hover
+{ 
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(221, 204, 204, 0.9);
+    padding: 1rem 1.4rem;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.tries,.instr
+{
+    opacity: .8;
+}
+.answer
+{
+    font-size: 1.3rem;
+    color: orange;
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+/* Styling for the pop-up */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    border: 1px solid #ccc;
+    padding: 25px;
+    z-index: 1000;
+  }
+  
+  .popup p {
+    margin: 0 30px;
+    text-align: center;
+  }
+  
+  /* Styling for the close button (X) */
+  .popup-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: orange;
+    padding: 5px;
+  }
+  .raindrop-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.raindrop {
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    background-color: white;
+    opacity: .25;
+    animation: fall 2s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+  

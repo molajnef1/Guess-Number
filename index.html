@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Guess The Number</title>
+</head>
+<body>
+    <div class="raindrop-container"></div>
+    <main>
+        <h1>Guess The Number</h1>
+        <p class="instr">between 1 and 100</p>
+        <form>
+            <input id="player_input" type="number" inputmode="numeric" placeholder="Enter a number">
+            <button id="submit-btn"> SUBMIT </button>
+            <p class="tries">Tries: <span id="try">0</span> / 10</p>
+            <div id="popup" class="popup">
+                <span id="popupCloseButton" class="popup-close-button">&times;</span>
+                <p id="answer"></p>
+              </div>
+        </form>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
