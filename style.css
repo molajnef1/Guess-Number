@@ -29,6 +29,10 @@ main
     justify-content: center;
     align-items: center;
 }
+form
+{
+    text-align: center;
+}
 input
 {
     height: 2rem;
@@ -73,6 +77,10 @@ input::-webkit-inner-spin-button {
 .tries,.instr
 {
     opacity: .8;
+}
+.tries
+{
+    text-align: left;
 }
 .answer
 {
